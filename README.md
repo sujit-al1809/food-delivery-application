@@ -1,8 +1,8 @@
-# 🍕 Food Delivery Web Application
+# Food Delivery Web Application
 
 A full-stack food delivery platform with user authentication, restaurant management, order tracking, and AI-powered delivery time estimation.
 
-## 📋 Project Overview
+## Project Overview
 
 This is a complete food delivery application built with:
 - **Backend**: Python Flask, SQLAlchemy ORM, Flask-Security
@@ -12,15 +12,15 @@ This is a complete food delivery application built with:
 - **AI/ML**: scikit-learn for ETA prediction
 
 ### Key Features
-- 👤 User authentication with role-based access control
-- 🏪 Restaurant management and menu items
-- 🛒 Shopping cart and order placement
-- 📦 Order tracking with real-time status updates
-- 🚚 AI-powered delivery time estimation
-- 📧 Email notifications for order updates
-- 📊 Admin dashboard for managing restaurants and orders
+- User authentication with role-based access control
+- Restaurant management and menu items
+- Shopping cart and order placement
+- Order tracking with real-time status updates
+- AI-powered delivery time estimation
+- Email notifications for order updates
+- Admin dashboard for managing restaurants and orders
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 food-delivery-app/
@@ -64,7 +64,7 @@ food-delivery-app/
 └── README.md
 ```
 
-## 📊 Database Models
+## Database Models
 
 ### User
 - `id`: Integer (Primary Key)
@@ -134,14 +134,14 @@ food-delivery-app/
 - `name`: String (Customer, RestaurantOwner, DeliveryAgent, Admin)
 - `description`: Text
 
-## 🔐 User Roles
+## User Roles
 
 1. **Customer**: Browse restaurants, place orders, track deliveries
 2. **RestaurantOwner**: Manage restaurant and menu items
 3. **DeliveryAgent**: Accept and manage deliveries
 4. **Admin**: Manage all restaurants, orders, and users
 
-## 🔌 REST API Endpoints
+## REST API Endpoints
 
 ### Authentication
 
@@ -267,7 +267,7 @@ POST /api/predict-eta/batch
   Response: { predictions: [{ estimated_minutes, ... }, ...] }
 ```
 
-## 🤖 AI/ML Features
+## AI/ML Features
 
 ### ETA Prediction Model
 
@@ -284,7 +284,7 @@ The application includes a trained Linear Regression model that predicts deliver
 
 **Peak Hours:** Orders placed during peak hours (11am-2pm, 6pm-9pm) receive a +10 minute surcharge.
 
-## 📧 Celery Background Jobs
+## Celery Background Jobs
 
 ### send_order_status_email
 - **Trigger**: When order status changes to "Out for Delivery"
@@ -300,7 +300,7 @@ The application includes a trained Linear Regression model that predicts deliver
 - **Trigger**: Scheduled maintenance task
 - **Action**: Deletes orders older than 90 days (Delivered/Cancelled only)
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.8+
@@ -486,7 +486,7 @@ curl -X PUT http://localhost:5000/api/orders/1/status \
   -d '{"status": "Out for Delivery"}'
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing
 1. Open browser and navigate to `http://localhost:5173`
@@ -498,7 +498,7 @@ curl -X PUT http://localhost:5000/api/orders/1/status \
 ### Test Credentials
 - **Admin**: admin@fooddelivery.com / admin123456
 
-## 🐳 Docker Setup (Optional)
+## Docker Setup (Optional)
 
 ### Backend Docker
 ```dockerfile
@@ -570,7 +570,7 @@ services:
 7. **Implement JWT token expiration**
 8. **Set up CORS properly** for production domains
 
-## 📚 Technologies Used
+## Technologies Used
 
 ### Backend
 - **Flask** 2.3.0 - Web framework
@@ -591,11 +591,11 @@ services:
 - **SQLite** (development)
 - **PostgreSQL** (production - recommended)
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 👥 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 1. Fork the repository
@@ -604,10 +604,10 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch
 5. Open a Pull Request
 
-## 📞 Support
+## Support
 
 For issues or questions, please create an issue on GitHub or contact support@fooddelivery.com
 
 ---
 
-**Happy coding! 🚀**
+**Happy coding!**
